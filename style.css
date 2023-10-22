@@ -1,25 +1,57 @@
 /* Style of Portfolio Lucas Degrande */
 
+/* Global formatting */
 .FormatacaoGlobal {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  color: #404040;
 }
 
+h2 {
+  font-size: 32px;
+}
+
+/* Apresentation*/
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #404040;
+}
+
+/* Heander and nav of the Portfolio - cabeçalho */
 .menu-cabecalho {
   color: #112e61;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .menu-cabecalho a {
   color: #112e61;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
 }
 
+/* section about me.  */
+.about-me p {
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+/* section knowledge */
+.knowledge li {
+  font-size: 19px;
+}
+
+/* Contact information */
 #secao-final a {
   color: #112e61;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
+  font-style: normal;
+}
+
+#secao-final h3 {
+  font-size: 20px;
+  font-style: normal;
 }
