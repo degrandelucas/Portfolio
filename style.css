@@ -6,7 +6,7 @@ html {
   font-size: 62.5%;
 }
 
-.FormatacaoGlobal {
+* {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   color: #404040;
 }
@@ -59,4 +59,9 @@ h1 {
 #secao-final h3 {
   font-size: 2rem;
   font-style: normal;
+}
+
+/* Section Copyright */
+section > p {
+  font-size: 1.5rem;
 }
