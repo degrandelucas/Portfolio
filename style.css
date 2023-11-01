@@ -9,6 +9,7 @@ html {
 * {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   color: #404040;
+  box-sizing: border-box;
 }
 
 h2 {
