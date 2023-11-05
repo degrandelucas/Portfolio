@@ -1,15 +1,26 @@
 /* Style of Portfolio Lucas Degrande */
 
 /* Global formatting */
+:root {
+  --cor-menu: #ff6600;
+}
+
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   color: #404040;
-  box-sizing: border-box;
+  font-size: 1.6rem;
+  line-height: 1.7;
 }
 
 h2 {
@@ -23,19 +34,36 @@ h1 {
   color: #404040;
 }
 
-/* Heander and nav of the Portfolio - cabeçalho */
-.menu-cabecalho {
-  color: #112e61;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.7rem;
+/* Heander and nav of the Portfolio - cabeçalho, using a tag div */
+.cabecalho {
+  padding: 1.5rem 2vw;
+  box-shadow: 0 0.21rem 0.4rem 0 rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(239, 243, 247);
 }
 
-.menu-cabecalho a {
+.menu-cabecalho a:link,
+.menu-cabecalho a:visited {
   color: #112e61;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-cabecalho a:hover,
+.menu-cabecalho a:active {
+  color: var(--cor-menu);
+}
+
+.menu-cabecalho.filters::after {
+  content: "\2BC6";
+}
+
+.cabecalho ul {
+  list-style: none;
 }
 
 /* section about me.  */
