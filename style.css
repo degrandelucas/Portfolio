@@ -105,8 +105,8 @@ button {
   padding: 0.512rem 1.953rem;
   color: aliceblue;
   background-image: linear-gradient(180deg, #2a68d3, #112e61);
-  border-bottom: aliceblue solid 0.2rem;
-  border-right: aliceblue solid 0.2rem;
+  border-bottom: aliceblue solid 0.15rem;
+  border-right: aliceblue solid 0.15rem;
   border-top: none;
   border-left: none;
   cursor: pointer;
