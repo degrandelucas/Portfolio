@@ -230,7 +230,8 @@ button:hover {
   width: 100%;
 }
 
-.whatsapp-fixed img:hover .whatsapp-fixed img:active {
+.whatsapp-fixed img:hover,
+.whatsapp-fixed img:active {
   transform: translate(-10%, -10%);
 }
 
