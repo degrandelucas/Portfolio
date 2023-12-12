@@ -45,13 +45,23 @@ h1 {
 
 /* Heander and nav of the Portfolio - cabeçalho, using a tag div */
 .cabecalho {
-  padding: 1.563rem 2vw;
+  display: flex;
+  justify-content: end;
+  gap: 1.953rem;
+  padding: 0.5rem 1rem 0 0;
   box-shadow: 0 0.21rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
   left: 0;
   background-color: rgb(239, 243, 247);
   z-index: 1000;
+  width: 100vw;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.563rem;
 }
 
 .menu-cabecalho a:link,
