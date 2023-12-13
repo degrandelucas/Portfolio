@@ -59,7 +59,7 @@ h1 {
   justify-content: end;
   align-items: center;
   gap: 1.953rem;
-  padding: 0 1rem 0 0;
+  padding: 0 1rem;
 }
 
 .filters {
