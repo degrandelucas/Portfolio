@@ -79,7 +79,7 @@ h1 {
   box-shadow: inset 0rem 0rem 0.3rem 0rem #112e61b0;
   color: #112e61;
   transition: opacity 0.3s visbility 0.3s;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.205);
   gap: 0;
 }
 
@@ -97,11 +97,6 @@ h1 {
 .filters li:last-child {
   border-bottom: none;
   padding: 0.328rem 0.64rem;
-}
-
-.menu-cabecalho.filters::after {
-  content: "\2BC6";
-  padding: 0 0 0 0.168rem;
 }
 
 .menu-cabecalho a:link,
@@ -125,7 +120,6 @@ ul:visited {
 
 /* section about me.  */
 .about-me {
-  padding: 7.451rem 2rem;
   background-image: url(Image-SecaoAboutMe.jpeg);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -136,21 +130,11 @@ ul:visited {
 
 .container-about-me {
   max-width: 100rem;
-  margin: 0 auto;
-}
-
-.about-me h1 {
-  padding-bottom: 3.052rem;
-}
-
-.about-me h2 {
-  padding-bottom: 3.052rem;
 }
 
 button {
   font-size: 1.728rem;
   display: inline-block;
-  margin: 1.953rem 0;
   font-weight: 500;
   border-radius: 3.052rem;
   padding: 0.512rem 1.953rem;
