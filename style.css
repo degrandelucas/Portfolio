@@ -69,6 +69,7 @@ h1 {
 .filters ul {
   opacity: 0;
   position: absolute;
+  display: flex;
   flex-flow: column;
   background-color: #eff3f7;
   border-radius: 1rem;
@@ -130,6 +131,15 @@ ul:visited {
 
 .container-about-me {
   max-width: 100rem;
+  margin: 0 auto;
+}
+
+.container-about-me-flex {
+  display: flex;
+  flex-flow: column;
+  text-align: justify;
+  gap: 1.953rem;
+  padding: 2.441rem 0;
 }
 
 button {
@@ -154,7 +164,6 @@ button:hover {
   font-weight: 600;
   box-shadow: 0.5rem 0.5rem 0.5rem 0rem #112e61b0;
 }
-
 /* section knowledge */
 .container-knowledge {
   max-width: 100rem;
