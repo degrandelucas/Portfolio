@@ -233,9 +233,9 @@ h1 {
     font-size: 2.488rem;
   }
   & .containers {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
   }
   & .container-front-end h3,
   .container-back-end h3,
