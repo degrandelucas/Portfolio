@@ -1,8 +1,12 @@
-/* Style of Portfolio Lucas Degrande */
+/* Style.css Portfolio Lucas Degrande */
 
-/* Global formatting */
+/* Formatacao Global */
 :root {
-  --cor-menu: #ff6600;
+  /* Variaveis Cores */
+  --cor-fonte: #fff;
+  --cor-hover-menu: #ff6600;
+  --background-color-conteudo:#222e35;
+  --background-color-fundo: #0c1317;
 }
 
 html {
@@ -18,14 +22,22 @@ html {
 
 body {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
-  color: #404040;
   font-size: 1.728rem;
   line-height: 1.6;
-  background-color: #f0f2f4;
+  background-color: var(--background-color-fundo);
+  color: var(--cor-fonte);
 }
 
 h2 {
   font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.488rem;
+}
+
+h4 {
+  font-size: 2.074rem;
 }
 
 ul {
@@ -37,20 +49,25 @@ p {
   line-height: 1.6;
 }
 
-/* Apresentation*/
+/* Apresentacao*/
 h1 {
-  font-size: 4.3rem;
-  font-weight: 600;
+  font-size: 5.16rem;
+  font-weight: 700;
+  background: linear-gradient(90deg,rgb(62 97 229 / 91%),rgb(47 155 189 / 93%) 60%);
+  background-clip: text;
+  color: transparent;  
 }
 
-/* Heander and nav of the Portfolio - cabeçalho, usando a tag div */
+/* Cabecalho (Heander) e navegacao (nav) do Portfolio - cabecalho, usando a tag div */
 .cabecalho {
-  padding: 1rem 0;
+  max-width: 100rem;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
   box-shadow: 0 0.21rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
   left: 0;
-  background-color: rgb(239, 243, 247);
+  background-color: var(--background-color-conteudo);
   z-index: 1000;
 
   & ul {
@@ -61,58 +78,14 @@ h1 {
     padding: 0 1rem;
   }
 
-  & .filters {
-    position: relative;
 
-    & ul {
-      opacity: 0;
-      position: absolute;
-      display: flex;
-      flex-flow: column;
-      background-color: #eff3f7;
-      border-radius: 1rem;
-      padding: 0.328rem 0;
-      right: 0;
-      width: max-content;
-      box-shadow: inset 0rem 0rem 0.3rem 0rem #112e61b0;
-      color: #112e61;
-      transition: opacity 0.3s visibility 0.3s;
-      border-bottom: solid 1px rgba(0, 0, 0, 0.205);
-      gap: 0;
-
-      &:hover,
-      &:visited {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
-
-  & .filters li {
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.205);
-    padding: 0.328rem 0.64rem;
-    width: 100%;
-
-    &:last-child {
-      border-bottom: none;
-      padding: 0.328rem 0.64rem;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-  }
-
-  & .menu-cabecalho a,
-  .menu-cabecalho a .menu-cabecalho.filters a,
-  ul,
-  .menu-cabecalho.filters a {
+  & .menu-cabecalho a
+  {
     transition: color 200ms ease-out;
 
     &:link,
     &:visited {
-      color: #112e61;
+      color: var(--cor-fonte);
       text-transform: uppercase;
       text-decoration: none;
       font-size: 1.44rem;
@@ -121,31 +94,63 @@ h1 {
 
     &:hover,
     &:active {
-      color: var(--cor-menu);
+      color: var(--cor-hover-menu);
     }
   }
 }
 
-/* section about me.  */
-.about-me {
-  background-image: url(Image-SecaoAboutMe.jpeg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: aliceblue;
-  box-shadow: 0 0.4rem 0.6rem 0 rgba(0, 0, 0, 0.15);
+/* Secao apresentacao e sobre mim */
 
-  & .container-about-me {
-    max-width: 100rem;
-    margin: 0 auto;
-  }
-  & .container-about-me-flex {
+/* Secao apresentacao e sobre mim. - configuracao geral */
+.container-sobre-mim, .conhecimento {
+  max-width: 100rem;
+  margin: 0 auto;
+
+  & .container-sobre-mim-flex {
     display: flex;
     flex-flow: column;
     text-align: justify;
     gap: 1.953rem;
     padding: 2.441rem;
   }
+  
+}
+
+/* Secao apresentacao */
+.apresentacao {
+  background-color: var(--background-color-conteudo);
+  max-width: 100rem;
+  margin: 2rem auto;
+  color: var(--cor-fonte);
+  box-shadow: 0 0.4rem 0.6rem 0 rgba(0, 0, 0, 0.15);
+  scroll-margin-top: 100px;
+
+}
+
+/* section sobre mim */
+.sobre-mim {
+  background-color: var(--background-color-conteudo);
+  max-width: 100rem;
+  margin: 2rem auto;
+  color: var(--cor-fonte);
+  box-shadow: 0 0.4rem 0.6rem 0 rgba(0, 0, 0, 0.15);
+  scroll-margin-top: 100px;
+
+    & .contate-me {
+      background: linear-gradient(90deg,rgb(62 97 229 / 91%),rgb(47 155 189 / 93%) 60%);
+      border-radius: 0.4rem;
+      box-shadow: 1.95px 1.95px 2.6px rgba(0,0,0,.15);
+      color: #fff;
+      display: block;
+      font-weight: 600;
+      padding: 1rem 1.8rem;
+      text-decoration: none;
+      transition: all .3s;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+
   & button {
     font-size: 1.728rem;
     display: inline-block;
@@ -170,47 +175,21 @@ h1 {
   }
 }
 
-/* section knowledge */
-.knowledge {
-  & .container-knowledge {
-    display: flex;
-    justify-content: space-between;
+/* Secao conhecimento */
+.conhecimento {
+
+  & h2{
+    text-align: center;
+  }
+
+  & .container-conhecimento {
     max-width: 100rem;
-    margin: 4.768rem auto 0rem auto;
-    box-shadow: inset 0 0 0.9rem 0.1rem #112e61b0;
-    border-radius: 2.5rem;
+    margin: 0 auto;
     padding: 1.563rem 1.953rem;
     position: relative;
-    margin-top: 4.768rem;
-    background-color: rgb(255, 255, 255);
-  }
+    background-color: var(--background-color-conteudo);
+    scroll-margin-top: 100px;
 
-  & .container-front-end,
-  .container-back-end,
-  .container-mobile,
-  .container-dados,
-  .container-outros {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 22rem;
-    margin: 2rem 1rem;
-    box-shadow: inset 0 0 0.9rem 0.1rem #112e61b0;
-    border-radius: 2.5rem;
-    padding: 1.563rem 1.953rem;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-
-    & h3 {
-      display: inline-block;
-      background-image: linear-gradient(90deg, #08084e, #073174);
-      padding: 0.328rem 1.25rem;
-      margin-bottom: 1.953rem;
-      border-radius: 1.5rem;
-      box-shadow: 0.3rem 0.3rem 0.6rem 0rem #112e61b0;
-      color: aliceblue;
-    }
-  }
 
   & li {
     font-size: 1.728rem;
@@ -229,21 +208,6 @@ h1 {
     /* box-shadow: inset 0rem 0rem 0.5rem 0.1rem #112e61b0; */
   }
 
-  & h2 {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-image: linear-gradient(90deg, #08084e, #073174);
-    padding: 0.328rem 1.25rem;
-    margin-bottom: 1.953rem;
-    border-radius: 1.5rem;
-    transform: translate(-50%, -50%) rotate(-1deg);
-    box-shadow: 0.3rem 0.3rem 0.6rem 0rem #112e61b0;
-    color: aliceblue;
-    font-size: 2.488rem;
-  }
-
   & .containers {
     display: grid;
     grid-auto-flow: column;
@@ -255,41 +219,35 @@ h1 {
     flex-flow: column;
     gap: 1rem;
 
-    & li {
-      display: flex;
-      align-items: center;
-      padding: 0rem 1rem;
-      /* margin-bottom: 1.953rem; */
-      border-radius: 1.5rem;
-      box-shadow: 0.3rem 0.3rem 0.6rem 0rem #112e61b0;
-      background-color: #e7e7e7;
-    }
   }
 }
-
-/* Contact information */
-.secao-final {
+}
+/* Contato */
+.contato {
   max-width: 100rem;
-  margin: 4.768rem auto 3.052rem auto;
-  box-shadow: inset 0 0 0.9rem 0.1rem #112e61b0;
-  border-radius: 2.5rem;
+  margin: 2rem auto;
   padding: 1.25rem 1.953rem 3.052rem 1.953rem;
   position: relative;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-color-conteudo);
 
   & a {
-    color: #404040;
+    color: var(--cor-fonte);
     text-decoration: none;
     font-size: 1.728rem;
     font-style: normal;
     transition: color 200ms ease-out;
 
     &:hover {
-      color: var(--cor-menu);
+      color: var(--cor-hover-menu);
     }
   }
 
-  & h3 {
+  & h2{
+    text-align: center;
+  }
+
+  & h4 {
+    color: var(--cor-fonte);
     font-size: 2.074rem;
     font-style: normal;
     transform: translatey(30%);
@@ -299,21 +257,6 @@ h1 {
     display: flex;
     flex-flow: column;
     gap: 1.953rem;
-  }
-
-  & h2 {
-    display: inline-block;
-    top: 0;
-    left: 50%;
-    position: absolute;
-    background-image: linear-gradient(90deg, #08084e, #073174);
-    padding: 0.328rem 1.25rem;
-    margin-bottom: 1.953rem;
-    border-radius: 1.5rem;
-    transform: translate(-50%, -50%) rotate(-1deg);
-    box-shadow: 0.3rem 0.3rem 0.6rem 0rem #112e61b0;
-    color: aliceblue;
-    font-size: 2.488rem;
   }
 
   & svg {
@@ -329,7 +272,7 @@ h1 {
     transition: fill 200ms ease-out;
 
     &:hover {
-      fill: var(--cor-menu);
+      fill: var(--cor-hover-menu);
     }
   }
 }
@@ -353,10 +296,10 @@ h1 {
   }
 }
 
-/* Section Copyright */
+/* Secao Copyright */
 .copyright {
-  border-top: solid 1px rgba(0, 0, 0, 0.5);
-  background-color: #f0f2f4;
+  background-color: var(--background-color-conteudo);
+  color: var(--cor-fonte);
 
   & > p {
     font-size: 1.44rem;

@@ -1,72 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head id>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Lucas Degrande</title>
+    <meta name="description" content="Explore meu portfólio na área de desenvolvimento, onde mostro meus conhecimentos aplicados em projetos criativos e responsivos demonstrando meu domínio de HTML, CSS, JavaScript, React e Python. Conheça meu trabalho, minhas experiências e entre em contato!" />
+    <title>Lucas Degrande</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@300&family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- Heander and nav of the Portfolio -->
+  <body >
+    <!-- Cabecalho e navegacao do Portfolio -->
     <header class="cabecalho">
       <nav>
           <ul>
-            <li class="menu-cabecalho">
-              <a href="https://www.linkedin.com/in/lucasdegrande/" target="_blank"
-                >Linkedin</a
-              >
-            </li>
-            <li class="menu-cabecalho">
-              <a href="https://github.com/degrandelucas" target="_blank"
-                >Github</a
-              >
-            </li>
-            <li class="menu-cabecalho filters">
-              <a href="#">Aplicações&#11015;</a>
-              <ul>
-                <li>
-                  <a 
-                    href="https://degrandelucas.github.io/CalculadorGorjetas/"
-                    target="_blank"
-                    >Calculadora Gorjetas</a
-                  >
-                </li>
-                <li>
-                  <a 
-                    href="https://degrandelucas.github.io/CopasSelecaoBrasileira/"
-                    target="_blank"
-                    >Copas Seleção Brasileira</a
-                  >
-                </li>
-                
-              </ul>
-            </li>
-            <li class="menu-cabecalho"><a href="#secao-final">Contato</a></li>
+            <li class="menu-cabecalho"><a href="#inicio">Inicio</a></li>
+
+            <li class="menu-cabecalho"><a href="#sobre-mim">Sobre</a></li>
+
+            <li class="menu-cabecalho"><a href="#tecnologias">Tecnologias</a></li>
+
+            <li class="menu-cabecalho"><a href="#portfolio">Portfolio</a></li>
+  
+            <li class="menu-cabecalho"><a href="#contato">Contato</a></li>
           </ul>
-        </div>
       </nav>
     </header>
 
-    <!-- Main of the Portfolio -->
+    <!-- Tag main do Portfolio -->
     <main>
-      <!-- section about me -->
-      <section class="about-me">
-        <div  class="container-about-me">
-          <div class="container-about-me-flex">
-            <h1>Olá, meu nome é Lucas Degrande</h1>
+      <!-- Secao apresentacao -->
+      <section class="apresentacao" id="inicio" >
+        <div  class="container container-sobre-mim">
+          <div class="container-sobre-mim-flex">
+            <h3>Olá, meu nome é Lucas Degrande</h3>
+            <h1>Desenvolvedor Full Stack</h1>
+            <a class="contate-me" href="#contato">Contate me</a>
+            <h3>Icones</h3>           
+          </div>
+        </div>
+      </section>
+
+      <!-- Secao sobre mim -->
+      <section class="sobre-mim" id="sobre-mim">
+        <div  class="container-sobre-mim">
+          <div class="container-sobre-mim-flex">
             <h2>Sobre Mim</h2>
             <p>
-              Cursando Análise e Desenvolvimento de Sistemas, complemento meus estudos com um curso específico em programação, focado em HTML, CSS, JavaScript e React. Além disso, sou graduado em Engenharia de Produção, com um MBA em Gestão de Projetos e Logística Empresarial.
+              Cursando Análise e Desenvolvimento de Sistemas, complemento meus estudos com um curso específico em programação, focado em HTML, CSS, JavaScript, React e Python. Além disso, sou graduado em Engenharia de Produção, com um MBA em Gestão de Projetos e Logística Empresarial.
             </p>
             <p>
               Minha experiência inclui a gestão de equipes. Liderei projetos com sucesso, destacando-me pela responsabilidade na implantação de uma nova unidade da empresa no Sul de Minas. Nessa função, supervisionei o treinamento de todos os colaboradores, bem como a implantação e implementação de todos os processos da filial.
             </p>
             <a
-            href="https://www.dropbox.com/preview/lucas%20degrande/documentos/forma%C3%A7%C3%A3o%20e%20qualifica%C3%A7%C3%B5es/Curr%C3%ADculos/Perfil%20Linkedin%20-%20Lucas%20Degrande%2029.10.2023.pdf?context=content_suggestions&role=personal"
+            href="https://drive.google.com/file/d/1pxQrKdAP3h_n6_eSdbfJrM9LwmJNE8Rj/view?usp=sharing"
             download
             target="_blank"
             ><button>Download CV</button></a>
@@ -74,13 +63,12 @@
         </div>
       </section>
 
-      <!-- section knowledge -->
-      <section class="knowledge">
-        <div class="container-knowledge">
-            <h2>Conhecimento nas linguagens</h2>
+
+      <!-- Secao tecnologias -->
+      <section class="conhecimento" id="tecnologias">
+        <div class="container-conhecimento">
+            <h2>Tecnologias</h2>
             <div class="containers">
-              <div class="container-front-end">
-                <h3>Front-end</h3>
                 <ul class="languages">
                   <li>
                     <img
@@ -100,80 +88,7 @@
                       alt="Simbolo-JavaScript"
                     />JavaScript
                   </li>
-                </ul>
-              </div>
-              <div class="container-back-end">
-                <h3>Back-end</h3>
-                <ul class="languages">
-                  <!-- <li>
-                    <img
-                      src="https://img.icons8.com/dusk/100/html-5.png"
-                      alt="Simbolo-HTML"
-                    />HTML
-                  </li>
-                  <li >
-                    <img
-                      src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/external-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-logo-color-tal-revivo.png"
-                      alt="Simbolo-CSS"
-                    />CSS
-                  </li>
-                  <li>
-                    <img
-                      src="https://img.icons8.com/dusk/100/javascript.png"
-                      alt="Simbolo-JavaScript"
-                    />JavaScript
-                  </li> -->
-                </ul>
-              </div>
-              <div class="container-mobile">
-                <h3>Mobile</h3>
-                <ul class="languages">
-                  <!-- <li>
-                    <img
-                      src="https://img.icons8.com/dusk/100/html-5.png"
-                      alt="Simbolo-HTML"
-                    />HTML
-                  </li>
-                  <li >
-                    <img
-                      src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/external-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-logo-color-tal-revivo.png"
-                      alt="Simbolo-CSS"
-                    />CSS
-                  </li>
-                  <li>
-                    <img
-                      src="https://img.icons8.com/dusk/100/javascript.png"
-                      alt="Simbolo-JavaScript"
-                    />JavaScript
-                  </li> -->
-                </ul>
-              </div>
-              <!-- <div class="container-dados">
-                <h3>Dados</h3>
-                <ul class="languages">
-                  <li>
-                    <img
-                      src="https://img.icons8.com/dusk/100/html-5.png"
-                      alt="Simbolo-HTML"
-                    />HTML
-                  </li>
-                  <li >
-                    <img
-                      src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/external-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-logo-color-tal-revivo.png"
-                      alt="Simbolo-CSS"
-                    />CSS
-                  </li>
-                  <li>
-                    <img
-                      src="https://img.icons8.com/dusk/100/javascript.png"
-                      alt="Simbolo-JavaScript"
-                    />JavaScript
-                  </li>
-                </ul>
-              </div>      -->
-              <div class="container-outros">
-                <h3>Outros</h3>
-                <ul class="languages">
+
                   <li>
                     <img
                       src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
@@ -195,11 +110,11 @@
     </main>
     <!-- Contact information -->
     <footer>
-      <section class="secao-final" id="secao-final">
+      <section class="contato" id="contato">
         <h2>Contato</h2>
         <address class="information">
           <div>
-            <h3>Celular</h3>
+            <h4>Celular</h4>
               <a
                 href="https://web.whatsapp.com/send?phone=553492517716"
                 target="_blank"
@@ -208,15 +123,15 @@
               >
           </div>
           <div>
-            <h3>E-mail</h3>
+            <h4>E-mail</h4>
             <a href="mailto:lucasdegrande15@gmail.com" target="_blank"
               ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-2 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z"/></svg>lucasdegrande15@gmail.com</a
             >
           </div>
           <div>
-            <h3>Linkedin</h3>
+            <h4>Linkedin</h4>
             <a href="https://www.linkedin.com/in/lucasdegrande/" target="_blank"
-              ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>Lucas Degrande</a
+              ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h4v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h4v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>Lucas Degrande</a
             >
           </div>
         </address>
@@ -227,7 +142,7 @@
       </div>
       <!-- Section Copyright -->
       <section class="copyright">
-        <p>Copyright &copy; 2023 Lucas Degrande</p>
+        <p>Copyright &copy; 2024 Lucas Degrande</p>
       </section>
     </footer>
   </body>
