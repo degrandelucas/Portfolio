@@ -58,7 +58,23 @@ h1 {
   color: transparent;  
 }
 
-/* Cabecalho (Heander) e navegacao (nav) do Portfolio - cabecalho, usando a tag div */
+.container {
+  max-width: 100rem;
+  margin: 2rem auto;
+  background-color: var(--background-color-conteudo);
+  scroll-margin-top: 10rem;
+
+    & .container-flex {
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+    gap: 1.953rem;
+    padding: 2.441rem;
+    
+  }
+}
+
+/* Cabecalho (Heander) e navegacao (nav) do Portfolio */
 .cabecalho {
   max-width: 100rem;
   margin: 2rem auto;
@@ -99,59 +115,22 @@ h1 {
   }
 }
 
-/* Secao apresentacao e sobre mim */
-
-/* Secao apresentacao e sobre mim. - configuracao geral */
-.container-sobre-mim, .conhecimento {
-  max-width: 100rem;
-  margin: 0 auto;
-
-  & .container-sobre-mim-flex {
-    display: flex;
-    flex-flow: column;
-    text-align: justify;
-    gap: 1.953rem;
-    padding: 2.441rem;
-  }
-  
-}
-
 /* Secao apresentacao */
-.apresentacao {
-  background-color: var(--background-color-conteudo);
-  max-width: 100rem;
-  margin: 2rem auto;
-  color: var(--cor-fonte);
-  box-shadow: 0 0.4rem 0.6rem 0 rgba(0, 0, 0, 0.15);
-  scroll-margin-top: 100px;
-
+.contate-me {
+  background: linear-gradient(90deg,rgb(62 97 229 / 91%),rgb(47 155 189 / 93%) 60%);
+  border-radius: 0.4rem;
+  box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+  transition: all .3s;
+  width: fit-content;
 }
 
 /* section sobre mim */
-.sobre-mim {
-  background-color: var(--background-color-conteudo);
-  max-width: 100rem;
-  margin: 2rem auto;
-  color: var(--cor-fonte);
-  box-shadow: 0 0.4rem 0.6rem 0 rgba(0, 0, 0, 0.15);
-  scroll-margin-top: 100px;
-
-    & .contate-me {
-      background: linear-gradient(90deg,rgb(62 97 229 / 91%),rgb(47 155 189 / 93%) 60%);
-      border-radius: 0.4rem;
-      box-shadow: 1.95px 1.95px 2.6px rgba(0,0,0,.15);
-      color: #fff;
-      display: block;
-      font-weight: 600;
-      padding: 1rem 1.8rem;
-      text-decoration: none;
-      transition: all .3s;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-    }
-
-  & button {
+button {
     font-size: 1.728rem;
     display: inline-block;
     font-weight: 500;
@@ -173,23 +152,14 @@ h1 {
       box-shadow: 0.5rem 0.5rem 0.5rem 0rem #112e61b0;
     }
   }
-}
+
 
 /* Secao conhecimento */
-.conhecimento {
+.tecnologias {
 
   & h2{
     text-align: center;
   }
-
-  & .container-conhecimento {
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 1.563rem 1.953rem;
-    position: relative;
-    background-color: var(--background-color-conteudo);
-    scroll-margin-top: 100px;
-
 
   & li {
     font-size: 1.728rem;
@@ -208,12 +178,6 @@ h1 {
     /* box-shadow: inset 0rem 0rem 0.5rem 0.1rem #112e61b0; */
   }
 
-  & .containers {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: auto;
-  }
-
   & .languages {
     display: flex;
     flex-flow: column;
@@ -221,14 +185,10 @@ h1 {
 
   }
 }
-}
+
 /* Contato */
 .contato {
-  max-width: 100rem;
-  margin: 2rem auto;
   padding: 1.25rem 1.953rem 3.052rem 1.953rem;
-  position: relative;
-  background-color: var(--background-color-conteudo);
 
   & a {
     color: var(--cor-fonte);
