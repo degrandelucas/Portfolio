@@ -114,18 +114,15 @@ p {
 /* Secao apresentacao */
 .apresentacao {
   .container-flex {
-    display: grid;
-  
-    & img {
-      width: 30rem;
-      border-radius: var(--border-radius-img-svg);     
-      }
+    display: flex;
+    
 
       & h1 {
       font-size: 5.16rem;
       font-weight: 700;
       color: var(--background-color-texto-principal-h1);
       }
+      
     & .contate-me {
       background: var(--background-color-button);
       border-radius: var(--border-radius-img-svg); 
@@ -162,6 +159,7 @@ p {
     }
   }
 }
+
 
 /* Secao sobre mim  */
 & button {
