@@ -116,21 +116,45 @@ h1 {
 }
 
 /* Secao apresentacao */
-.contate-me {
-  background: linear-gradient(90deg,rgb(62 97 229 / 91%),rgb(47 155 189 / 93%) 60%);
-  border-radius: 0.4rem;
-  box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
-  color: #fff;
-  display: block;
-  font-weight: 600;
-  padding: 1rem 1.8rem;
-  text-decoration: none;
-  transition: all .3s;
-  width: fit-content;
+.apresentacao {
+
+  & .contate-me {
+    background: linear-gradient(90deg,rgb(62, 97 ,229),rgb(47, 155, 189));
+    border-radius: 0.4rem;
+    box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    padding: 1rem 1.8rem;
+    text-decoration: none;
+    transition: all .3s;
+    width: fit-content;
+
+    &:hover{
+      transform: translatey(-10%);
+    }
+  }
+
+  & .icones-apresentacao{
+    display: flex;
+    gap: 1.953rem;
+
+  }
+
+  & img {
+    width: 3.5rem;
+    transition: all .3s;
+
+
+    &:hover{
+      transform: translatey(-10%);
+    }
+  }
+
 }
 
 /* section sobre mim */
-button {
+& button {
     font-size: 1.728rem;
     display: inline-block;
     font-weight: 500;
@@ -152,7 +176,7 @@ button {
       box-shadow: 0.5rem 0.5rem 0.5rem 0rem #112e61b0;
     }
   }
-
+ 
 
 /* Secao conhecimento */
 .tecnologias {
@@ -173,7 +197,6 @@ button {
     width: 5rem;
     height: 5rem;
     /* background-color: #e7e7e7; */
-    border-radius: 30%;
     padding: 0.8rem;
     /* box-shadow: inset 0rem 0rem 0.5rem 0.1rem #112e61b0; */
   }
