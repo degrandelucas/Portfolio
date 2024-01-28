@@ -10,6 +10,9 @@
   --background-color-button: linear-gradient(90deg,rgb(62, 97 ,229),rgb(47, 155, 189));
   --background-color-texto-principal-h1: #68aae0;
   --background-color-fundo-svg:#e7e7e7;
+
+  /* Variaveis border-radius */
+  --border-radius-img-svg: 0.4rem;
 }
 
 html {
@@ -110,48 +113,54 @@ p {
 
 /* Secao apresentacao */
 .apresentacao {
+  .container-flex {
+    display: grid;
+  
+    & img {
+      width: 30rem;
+      border-radius: var(--border-radius-img-svg);     
+      }
 
-  & h1 {
-    font-size: 5.16rem;
-    font-weight: 700;
-    color: var(--background-color-texto-principal-h1);
-  }
+      & h1 {
+      font-size: 5.16rem;
+      font-weight: 700;
+      color: var(--background-color-texto-principal-h1);
+      }
+    & .contate-me {
+      background: var(--background-color-button);
+      border-radius: var(--border-radius-img-svg); 
+      box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
+      color: #fff;
+      display: block;
+      font-weight: 600;
+      padding: 1rem 1.563rem;
+      text-decoration: none;
+      transition: all .3s;
+      width: fit-content;
 
-  & .contate-me {
-    background: var(--background-color-button);
-    border-radius: 0.4rem;
-    box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
-    color: #fff;
-    display: block;
-    font-weight: 600;
-    padding: 1rem 1.563rem;
-    text-decoration: none;
-    transition: all .3s;
-    width: fit-content;
+      &:hover{
+        transform: translatey(-10%);
+      }
+    }
 
-    &:hover{
-      transform: translatey(-10%);
+    & .icones-apresentacao{
+      display: flex;
+      gap: 1.953rem;
+
+    }
+
+    & svg {
+      width: 4rem;
+      height: 4rem;
+      transition: all .3s;
+      border-radius: var(--border-radius-img-svg); 
+      fill: var(--background-color-fundo-svg);
+
+      &:hover{
+        transform: translatey(-10%);
+      }
     }
   }
-
-  & .icones-apresentacao{
-    display: flex;
-    gap: 1.953rem;
-
-  }
-
-  & svg {
-    width: 4rem;
-    height: 4rem;
-    transition: all .3s;
-    border-radius: 0.4rem;
-    fill: var(--background-color-fundo-svg);
-
-    &:hover{
-      transform: translatey(-10%);
-    }
-  }
-
 }
 
 /* Secao sobre mim  */
@@ -238,7 +247,7 @@ p {
       width: 4rem;
       height: 4rem;
       background-color: var(--background-color-fundo-svg);
-      border-radius: 0.4rem;
+      border-radius: var(--border-radius-img-svg); 
       padding: 0.8rem;
       box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
       transform: translatey(30%);
@@ -267,7 +276,7 @@ p {
     width: 4rem;
     height: 4rem;
     transition: all .3s;
-    border-radius: 0.4rem;  
+    border-radius: var(--border-radius-img-svg);   
     fill: var(--background-color-fundo-svg);
     
     &:hover{
