@@ -8,7 +8,7 @@
   --background-color-conteudo:#222e35;
   --background-color-fundo: #0c1317;
   --background-color-button: linear-gradient(90deg,rgb(62, 97 ,229),rgb(47, 155, 189));
-  --background-color-texto-principal-h1: linear-gradient(90deg,rgb(158, 175, 235),rgb(102, 187, 212));
+  --background-color-texto-principal-h1: #68aae0;
   --background-color-fundo-svg:#e7e7e7;
 }
 
@@ -56,9 +56,7 @@ p {
 h1 {
   font-size: 5.16rem;
   font-weight: 700;
-  background: var(--background-color-texto-principal-h1);
-  background-clip: text;
-  color: transparent;  
+  color: var(--background-color-texto-principal-h1);
 }
 
 .container {
@@ -120,7 +118,6 @@ h1 {
 
 /* Secao apresentacao */
 .apresentacao {
-
   & .contate-me {
     background: var(--background-color-button);
     border-radius: 0.4rem;
@@ -144,10 +141,12 @@ h1 {
 
   }
 
-  & img {
-    width: 3.5rem;
+  & svg {
+    width: 4rem;
+    height: 4rem;
     transition: all .3s;
     border-radius: 0.4rem;
+    fill: var(--background-color-fundo-svg);
 
     &:hover{
       transform: translatey(-10%);
@@ -213,23 +212,6 @@ h1 {
     text-align: center;
   }
 
-  & .icones{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-  }
-
-  & img {
-    width: 3.5rem;
-    transition: all .3s;
-    border-radius: 0.4rem;
-
-    &:hover{
-      transform: translatey(-10%);
-    }
-  }
-
-
    & .informacoes {
     display: flex;
     flex-flow: column;
@@ -263,6 +245,30 @@ h1 {
         fill: var(--cor-hover-menu);
       }
    }
+  }
+}
+
+.display-informacoes{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+& .icones-redes {
+  display: flex;
+  flex-flow: row;
+  gap: 1.563rem;
+  
+  & svg {
+    width: 4rem;
+    height: 4rem;
+    transition: all .3s;
+    border-radius: 0.4rem;  
+    fill: var(--background-color-fundo-svg);
+    
+    &:hover{
+      transform: translatey(-10%);
+    }  
   }
 }
 
