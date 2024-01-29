@@ -114,8 +114,18 @@ p {
 /* Secao apresentacao */
 .apresentacao {
   .container-flex {
-    display: flex;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-columns: 1fr 1fr;  
+    gap: 4.768rem;
     
+      & img {
+        border-radius: var(--border-radius-img-svg);
+        box-shadow: inset 0 0 0rem 0.5rem #222e35;
+        width: 30rem;
+        clip-path: inset(2px);
+        justify-self:end;
+      }
 
       & h1 {
       font-size: 5.16rem;
@@ -143,7 +153,6 @@ p {
     & .icones-apresentacao{
       display: flex;
       gap: 1.953rem;
-
     }
 
     & svg {
