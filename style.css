@@ -256,6 +256,8 @@ p {
       }
 
       .botoes-projeto {
+        display: flex;
+        gap: 1rem;
         margin-top: auto;
 
         & button a {
