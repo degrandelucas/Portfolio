@@ -8,6 +8,7 @@
   --background-color-conteudo:#222e35;
   --background-color-fundo: #0c1317;
   --background-color-button: linear-gradient(90deg,rgb(62, 97 ,229),rgb(47, 155, 189));
+  --background-color-button-repositorio: linear-gradient(45deg, rgb(27, 27, 27, 83%), #1c272d);
   --background-color-texto-principal-h1: #68aae0;
   --background-color-fundo-svg:#e7e7e7;
 
@@ -230,17 +231,47 @@ p {
 /* Secao portfolio */
 .portfolio {
 
-  & h2{
+  & h2 {
     text-align: center;
   }
 
-  /* .article{
-    display: flex;
-    flex-flow: row;   
-    gap: 4.768rem;
-  } */
+  .projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.563rem;
 
+    & figure a img{
+      width: 50rem;
+    }
+
+    .informacao-projeto{
+      display: flex;
+      flex-flow: column;
+      padding-bottom: 1.25rem;
+
+      .titulo-paragrafo-projeto{
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+      }
+
+      .botoes-projeto {
+        margin-top: auto;
+
+        & button a {
+          text-decoration: none;
+          color: var(--cor-fonte);
+        }
+
+        .botao-repositorio{
+            background: var(--background-color-button-repositorio);
+        }
+      }
+    }
+  }
 }
+
+
 
 /* Contato */
 .contato {
@@ -310,8 +341,8 @@ p {
   }
 }
 
-/* Div Whatsapp Fixed */
-.whatsapp-fixed {
+/* Div Whatsapp Fixo */
+.whatsapp-fixo {
   position: fixed;
   bottom: 0.5rem;
   right: 0.5rem;
