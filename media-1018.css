@@ -1,0 +1,7 @@
+@media all and (max-width: 63.62em) {
+    .portfolio {
+        & p{
+            font-size: 1.7rem;
+        }
+    }
+}

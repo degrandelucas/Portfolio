@@ -1,0 +1,10 @@
+@media all and (max-width: 64.38em) {
+    .container {
+        max-width: 98vw;
+      }
+      
+      /* Cabecalho e navegacao do Portfolio */
+      .cabecalho {
+        max-width: 98vw;
+      }
+}
