@@ -1,0 +1,21 @@
+@media all and (max-width: 60em) {
+
+    /* Secao apresentacao */
+    .apresentacao {
+        .container-flex {
+          gap: 2.441rem
+      }
+    } 
+      /* Secao Portfolio */
+      .container-flex .projetos {
+        display: flex;
+        flex-flow: column;
+        gap: 1.563rem;
+
+        & img{
+            min-width: 90vw;
+        }
+      }
+    
+    
+}
