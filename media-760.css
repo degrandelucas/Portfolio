@@ -1,0 +1,18 @@
+@media all and (max-width: 47.50em) {
+
+    /* Secao apresentacao */
+    .apresentacao {
+        .container-flex {
+          display: flex;
+          flex-direction: column-reverse; /* Inverte a ordem dos elementos */
+        }
+    
+        .container-flex > div {
+          flex-grow: 1; /* Faz com que o elemento ocupe todo o espaço disponível */
+        }
+    
+        & img {
+          display: none;
+        }
+      }
+}
