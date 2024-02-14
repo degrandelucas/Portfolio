@@ -98,8 +98,7 @@ p {
     transition: color 300ms ease-out;
 
     &:link,
-    &:visited, 
-    &:active {
+    &:visited {
       color: var(--cor-fonte);
       text-transform: uppercase;
       text-decoration: none;
@@ -107,10 +106,14 @@ p {
       font-weight: 600;
     }
 
-    &:hover
-     {
+    &:hover,
+    &:active {
       color: var(--cor-hover-menu);
     }
+
+    .remover-hover {
+      color: var(--cor-fonte) !important; /* Utilize !important para garantir que este estilo tenha prioridade */
+  }
   }
 }
 
