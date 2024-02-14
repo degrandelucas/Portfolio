@@ -111,9 +111,9 @@ p {
       color: var(--cor-hover-menu);
     }
 
-    .remover-hover {
-      color: var(--cor-fonte) !important; /* Utilize !important para garantir que este estilo tenha prioridade */
-  }
+    &:active{
+    color: var(--cor-fonte) !important;
+    }
   }
 }
 
