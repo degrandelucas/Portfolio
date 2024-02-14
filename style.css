@@ -98,7 +98,8 @@ p {
     transition: color 300ms ease-out;
 
     &:link,
-    &:visited {
+    &:visited, 
+    &:active {
       color: var(--cor-fonte);
       text-transform: uppercase;
       text-decoration: none;
@@ -106,8 +107,8 @@ p {
       font-weight: 600;
     }
 
-    &:hover,
-    &:active {
+    &:hover
+     {
       color: var(--cor-hover-menu);
     }
   }
