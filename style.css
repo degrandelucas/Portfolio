@@ -218,6 +218,7 @@ p {
   & .container-lista-tecnologias{
     display: flex;
     justify-content: center;
+    flex-flow: wrap;
     gap: 1.953rem;
 
     & .tecnologia{
@@ -283,7 +284,7 @@ p {
     text-align: center;
   }
 
-   & .informacoes {
+  & .informacoes {
     display: flex;
     flex-flow: column;
     gap: 0.8rem;
@@ -300,7 +301,7 @@ p {
       }
     }
 
-     & svg {
+    & svg {
       display: inline-block;
       width: 4rem;
       height: 4rem;
@@ -315,31 +316,32 @@ p {
       &:hover {
         fill: var(--cor-hover-menu);
       }
-   }
+    }
   }
-}
 
-.display-informacoes{
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
+  .display-informacoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 
-& .icones-redes {
-  display: flex;
-  flex-flow: row;
-  gap: 1.563rem;
-  
-  & svg {
-    width: 4rem;
-    height: 4rem;
-    transition: all .3s;
-    border-radius: var(--border-radius-img-svg);   
-    fill: var(--background-color-fundo-svg);
+
+  & .icones-redes {
+    display: flex;
+    flex-flow: row;
+    gap: 1.563rem;
     
-    &:hover{
-      transform: translatey(-10%);
-    }  
+    & svg {
+      width: 4rem;
+      height: 4rem;
+      transition: all .3s;
+      border-radius: var(--border-radius-img-svg);   
+      fill: var(--background-color-fundo-svg);
+      
+      &:hover{
+        transform: translatey(-10%);
+        }  
+      }
+    }
   }
 }
 

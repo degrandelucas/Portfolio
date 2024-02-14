@@ -4,15 +4,21 @@
     .apresentacao {
         .container-flex {
           display: flex;
-          flex-direction: column-reverse; /* Inverte a ordem dos elementos */
         }
     
-        .container-flex > div {
-          flex-grow: 1; /* Faz com que o elemento ocupe todo o espaço disponível */
+        .container-flex {
+          flex-grow: 1; 
         }
     
         & img {
           display: none;
+        }
+      }
+
+      /* Secao Portfolio */
+      .projetos figure a{
+        & img{
+            max-width: 98vw;
         }
       }
 }
