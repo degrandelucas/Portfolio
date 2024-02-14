@@ -106,12 +106,12 @@ p {
       font-weight: 600;
     }
 
-    &:hover,
-    &:active {
+    &:hover {
       color: var(--cor-hover-menu);
     }
 
-    &:active{
+    &:active, 
+    &:focus{
     color: var(--cor-fonte) !important;
     }
   }
