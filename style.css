@@ -106,15 +106,10 @@ p {
       font-weight: 600;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       color: var(--cor-hover-menu);
     }
-
-    &:active, 
-    &:focus{
-    color: var(--cor-fonte) !important;
-    }
-  }
 }
 
 /* Secao apresentacao */
