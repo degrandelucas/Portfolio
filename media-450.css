@@ -4,4 +4,11 @@
     /* font-size: 7px; */
     font-size: 43.75%;
   }
+
+   /* Secao Portfolio */
+   .container-flex .projetos{
+    & img{
+       max-width: 90vw;
+       }
+   }
   }
