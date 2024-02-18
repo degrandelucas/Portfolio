@@ -11,4 +11,9 @@
        max-width: 90vw;
        }
    }
+
+   /* Div Whatsapp Fixo */
+  .whatsapp-fixo {
+  right: 0.7rem;
   }
+}
