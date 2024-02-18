@@ -1,5 +1,4 @@
 @media all and (max-width: 60em) {
-
     /* Secao apresentacao */
     .apresentacao {
         .container-flex {
@@ -8,13 +7,6 @@
     } 
       /* Secao Portfolio */
       .container-flex .projetos {
-        display: flex;
-        flex-flow: column;
-        gap: 0.512rem;
-
-        & img{
-            min-width: 92vw;
-        }
         .informacao-projeto{
             gap: 1.25rem;
         }

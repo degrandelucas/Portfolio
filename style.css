@@ -240,8 +240,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.563rem;
+    justify-content: space-between;
 
-    
 
     & figure{
       width: 50rem;

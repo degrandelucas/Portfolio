@@ -1,19 +1,8 @@
 @media all and (max-width: 47.50em) {
-
-    /* Secao apresentacao */
-    .apresentacao {
-        .container-flex {
-          display: flex;
-        }
-    
-        .container-flex {
-          flex-grow: 1; 
-        }
-    
-        & img {
-          display: none;
-        }
-      }
+  html {
+    /* font-size: 8px; */
+    font-size: 50%;
+  }
 
       /* Secao Portfolio */
       .projetos figure a{
