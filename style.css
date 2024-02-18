@@ -231,7 +231,6 @@ p {
 
 /* Secao portfolio */
 .portfolio {
-
   & h2 {
     text-align: center;
   }
@@ -293,6 +292,21 @@ p {
             background: var(--background-color-button-repositorio);
         }
       }
+    }
+  }
+}
+
+.todos-projetos{
+
+  a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: var(--cor-fonte);
+    text-decoration: none;
+    font-size: 1.44rem;
+    font-weight: 600;
     }
   }
 }
