@@ -28,11 +28,10 @@
         flex-flow: column;
         gap: 1.25rem; 
 
-         & img{
+         & a img{
             min-width: 92vw;
         }
 
-      
         .informacao-projeto{
             gap: 1.25rem;
         }
