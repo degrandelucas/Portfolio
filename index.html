@@ -221,11 +221,11 @@
       </div>
 
       <!-- Div Whatsapp Fixo -->
-      </section>
       <div class="whatsapp-fixo">
-       <a href="https://web.whatsapp.com/send?phone=553492517716" id="whatsapp-link"
+       <a href="https://web.whatsapp.com/send?phone=553492517716" id="whatsapp-link-icone"
        target="_blank"><img src="https://www.hashtagtreinamentos.com/wp-content/uploads/2023/06/whatsapp-logo-2.png" alt="whatsapp-logo" ></a>
       </div>
+    </section>
 
       <!-- Secao Copyright -->
       <section class="copyright">
@@ -233,23 +233,8 @@
       </section>
     </footer>
 
-    <script>
-      // Verifica se o dispositivo é móvel
-      function isMobile() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      }
-    
-      // Redireciona o usuário com base no tipo de dispositivo
-      function redirectWhatsappLink() {
-        var whatsappLink = document.getElementById('whatsapp-link');
-    
-        if (isMobile()) {
-          whatsappLink.href = "whatsapp://send?phone=553492517716"; // Link para abrir o WhatsApp no dispositivo móvel
-        }
-      }
-    
-      // Redireciona quando a página carrega
-      window.onload = redirectWhatsappLink;
-    </script>
+    <!-- abrir o WhatsAppWeb no navegador ou o WhatsApp no dispositivo móvel -->
+    <script src="./script.js"></script>
+
   </body>
 </html>
