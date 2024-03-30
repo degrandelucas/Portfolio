@@ -118,6 +118,7 @@ p {
 
   & .icone-menu, & .icone-fechar{
     display: none;
+    cursor: pointer;
   }
 
 }
