@@ -26,13 +26,15 @@
     & .icone-menu{
       display: block;
       grid-row-start: 1;
-      justify-items: end;
     }
 
     & .icone-fechar{
       display: none;
       grid-row-start: 1;
-      justify-items: end;
+    }
+
+    & .icone-menu, & .icone-fechar{
+      justify-self: right;
     }
 
   }
