@@ -5,6 +5,38 @@
     font-size: 43.75%;
   }
 
+  /* Cabecalho e navegacao do Portfolio */
+  .cabecalho {
+    display: grid;
+    gap: 2rem;
+
+    & nav{
+      display: none;
+
+      & ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: end;
+        align-items: center;
+        gap: 1.953rem;
+        padding: 0 1rem;
+      }
+    }
+
+    & .icone-menu{
+      display: block;
+      grid-row-start: 1;
+      justify-items: end;
+    }
+
+    & .icone-fechar{
+      display: none;
+      grid-row-start: 1;
+      justify-items: end;
+    }
+
+  }
+
    /* Secao Portfolio */
    .container-flex .projetos{
     & img{
