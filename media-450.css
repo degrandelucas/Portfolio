@@ -8,7 +8,7 @@
   /* Cabecalho e navegacao do Portfolio */
   .cabecalho {
     display: grid;
-    gap: 2rem;
+    gap: 1.2rem;
 
     & nav{
       display: none;
