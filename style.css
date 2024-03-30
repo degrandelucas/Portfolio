@@ -111,6 +111,15 @@ p {
       color: var(--cor-hover-menu);
     }
   }
+
+  & svg{
+    width: 3.583rem;
+  }
+
+  & .icone-menu, & .icone-fechar{
+    display: none;
+  }
+
 }
 
 /* Secao apresentacao */
