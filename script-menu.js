@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Detecta cliques fora dos elementos relevantes para reverter as alterações
     document.addEventListener('click', function(event) {
-      if (window.innerWidth < 450px && !event.target.closest('.cabecalho')) {
+      if (window.innerWidth < 450 && !event.target.closest('.cabecalho')) {
         nav.style.display = 'none';
         iconeMenu.style.display = 'block';
         iconeFechar.style.display = 'none';
