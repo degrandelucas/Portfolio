@@ -9,7 +9,6 @@
   .cabecalho {
     display: grid;
     gap: 1.2rem;
-    justify-content: center;
 
     & nav{
       display: block;
@@ -17,7 +16,7 @@
       & ul {
         display: flex;
         /* flex-flow: column; */
-        justify-content: center;
+        justify-content: space-between;
         /* align-items: center;
         gap: 1.953rem;
         padding: 0 1rem;
@@ -37,7 +36,6 @@
     & .icone-menu, & .icone-fechar{
       justify-self: right;
     } */
-
     }
   }
 }
