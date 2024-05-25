@@ -9,15 +9,16 @@
   .cabecalho {
     display: grid;
     gap: 1.2rem;
+    justify-content: center;
 
     & nav{
-      display: none;
+      display: block;
 
       & ul {
         display: flex;
-        flex-flow: column;
-        justify-content: end;
-        align-items: center;
+        /* flex-flow: column; */
+        justify-content: center;
+        /* align-items: center;
         gap: 1.953rem;
         padding: 0 1rem;
       }
@@ -35,9 +36,11 @@
 
     & .icone-menu, & .icone-fechar{
       justify-self: right;
-    }
+    } */
 
+    }
   }
+}
 
    /* Secao Portfolio */
    .container-flex .projetos{
