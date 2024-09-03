@@ -17,7 +17,7 @@ Este é o meu portfólio de desenvolvimento, onde exibo meus conhecimentos aplic
 
 ## Live Site
 
-Você pode visitar o projeto pelo link: [Lucas Degrande Portfolio](https://lucasdegrande.netlify.app)
+Você pode visitar o projeto pelo link: [Lucas Degrande Portfolio](https://lucasdegrande.com)
   
 ## Autor
 
