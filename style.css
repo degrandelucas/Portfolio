@@ -411,10 +411,31 @@ p {
   }
 }
 
+/* Div Botao Subir Página */
+.botao-subir-pagina {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-img-svg);  
+  background-color: var(--background-color-fundo-svg);
+  transition: all .3s ease-out;
+  &:hover,
+  &:active {
+     transform: translatey(-10%);
+  }
+  img{
+    width: 100%;
+  }
+}
+
+
 /* Div Whatsapp Fixo */
 .whatsapp-fixo {
   position: fixed;
-  bottom: 0.5rem;
+  bottom: 4rem;
   right: 0.5rem;
   width: 4rem;
   cursor: pointer;
