@@ -49,6 +49,11 @@
 
    /* Div Whatsapp Fixo */
   .whatsapp-fixo {
-  right: 1rem;
+    right: 1rem;
+  }
+
+  /* Div Botao Subir Página */
+  .botao-subir-pagina {
+    right: 1.3rem;
   }
 }
