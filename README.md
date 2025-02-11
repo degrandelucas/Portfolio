@@ -1,6 +1,6 @@
 # Portfolio Lucas Degrande
 
-Este é o meu portfólio de desenvolvimento, onde exibo meus conhecimentos aplicados em projetos criativos e responsivos, demonstrando proficiência em HTML, CSS, JavaScript, React e Python. Explore meu trabalho, minhas experiências e entre em contato!
+Este é o meu portfólio de desenvolvimento, onde exibo meus conhecimentos aplicados em projetos criativos e responsivos, demonstrando proficiência em PHP, Laravel, Python, JavaScript, Git, Bootstrap, Tailwind CSS, CSS, HTML. Explore meu trabalho, minhas experiências e entre em contato!
 
 ## Funcionalidades Principais
 
