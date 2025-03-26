@@ -1,0 +1,467 @@
+/* Style.css Portfolio Lucas Degrande */
+
+/* Importacao do materialize-css */
+@import "~materialize-css/dist/css/materialize.min.css";
+
+
+/* Formatacao Global */
+:root {
+  /* Variaveis Cores */
+  --cor-fonte: #fff;
+  --cor-hover-menu: #ff6600;
+  --background-color-conteudo:#222e35;
+  --background-color-fundo: #0c1317;
+  --background-color-button: linear-gradient(90deg,rgb(62, 97 ,229),rgb(47, 155, 189));
+  --background-color-button-repositorio: linear-gradient(45deg, rgb(27, 27, 27, 83%), #1c272d);
+  --background-color-texto-principal-h1: #68aae0;
+  --background-color-fundo-svg:#e7e7e7;
+
+  /* Variaveis border-radius */
+  --border-radius-img-svg: 0.4rem;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", "Open Sans", "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 1.728rem;
+  line-height: 1.6;
+  background-color: var(--background-color-fundo);
+  color: var(--cor-fonte);
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.488rem;
+}
+
+h4 {
+  font-size: 2.074rem;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.728rem;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 2rem auto;
+  background-color: var(--background-color-conteudo);
+  scroll-margin-top: 10rem;
+
+    & .container-flex {
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+    gap: 1.953rem;
+    padding: 2.441rem;
+    
+  }
+}
+
+/* Cabecalho e navegacao do Portfolio */
+.cabecalho {
+  max-width: 100rem;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  box-shadow: 0 0.21rem 0.4rem 0 rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color-conteudo);
+  z-index: 1000;
+
+  & ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.953rem;
+    padding: 0 1rem;
+  }
+
+  & .menu-cabecalho a
+  {
+    transition: color 300ms ease-out;
+
+    &:link,
+    &:visited {
+      color: var(--cor-fonte);
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.44rem;
+      font-weight: 600;
+    }
+
+    &:hover,
+    &:active {
+      color: var(--cor-hover-menu);
+    }
+  }
+
+  & svg{
+    width: 4.3rem;
+  }
+
+  & .icone-menu, & .icone-fechar{
+    display: none;
+    cursor: pointer;
+  }
+
+}
+
+/* Secao apresentacao */
+.apresentacao {
+  .container-flex {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-columns: 1fr 1fr;  
+    gap: 4.768rem;
+    
+      & img {
+        border-radius: var(--border-radius-img-svg);
+        box-shadow: inset 0 0 0rem 0.5rem #222e35;
+        width: 30rem;
+        /* clip-path: inset(2px); */
+        justify-self:end;
+        border-radius: var(--border-radius-img-svg);
+        /* border-radius: 1.3rem;  */
+      }
+
+      & h1 {
+      font-size: 5.16rem;
+      font-weight: 700;
+      color: var(--background-color-texto-principal-h1);
+      }
+      
+    & .contate-me {
+      background: var(--background-color-button);
+      border-radius: var(--border-radius-img-svg); 
+      box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
+      color: var(--cor-fonte);
+      display: block;
+      font-weight: 600;
+      padding: 1rem 1.563rem;
+      text-decoration: none;
+      transition: all .3s;
+      width: fit-content;
+
+      &:hover{
+        transform: translatey(-10%);
+      }
+    }
+
+    & .icones-apresentacao{
+      display: flex;
+      gap: 1.953rem;
+    }
+
+    & svg {
+      width: 4rem;
+      height: 4rem;
+      transition: all .3s;
+      border-radius: var(--border-radius-img-svg); 
+      fill: var(--background-color-fundo-svg);
+
+      &:hover{
+        transform: translatey(-10%);
+      }
+    }
+  }
+}
+
+
+/* Secao sobre mim  */
+& button {
+  background: var(--background-color-button);
+  border-radius: 0.4rem;
+  font-size: 1.728rem;
+  box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
+  border: none;
+  color: var(--cor-fonte);
+  font-weight: 600;
+  padding: 1rem 1.563rem;
+  text-decoration: none;
+  width: fit-content;
+  transition: all .3s;
+
+    &:hover {
+      transform: translatey(-10%);
+      cursor: pointer;
+    }
+  }
+ 
+
+/* Secao tecnologias */
+.tecnologias {
+
+  & h2{
+    text-align: center;
+  }
+
+  & li {
+    font-size: 1.728rem;
+    font-weight: 900;
+    list-style: none;
+    display: inline-block;
+  }
+
+  & img {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    padding: 0.8rem;
+  }
+
+  & .container-lista-tecnologias{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 1.953rem;
+
+    & .tecnologia{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+}
+
+/* Secao portfolio */
+.portfolio {
+  & h2 {
+    text-align: center;
+  }
+
+  .projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.563rem;
+    justify-content: space-between;
+
+
+    & figure{
+      width: 50rem;
+      height: 35rem;
+
+      & a img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .informacao-projeto{
+      display: flex;
+      flex-flow: column;
+      padding-bottom: 1.25rem;
+
+      .titulo-paragrafo-projeto{
+        display: flex;
+        flex-flow: column;
+        gap: 0.512rem;
+
+        .titulo-tecnologias-usadas{
+          display: flex;
+          gap: 1rem;
+          justify-content: space-between;
+     
+          .tecnologias-usadas {
+            display: flex;
+            gap: 0.64rem;
+
+            & img{
+              width: 2.4rem;
+            }
+          }
+        }
+      }
+
+      .botoes-projeto {
+        display: flex;
+        gap: 1rem;
+        margin-top: auto;
+
+        & button a {
+          text-decoration: none;
+          color: var(--cor-fonte);
+        }
+
+        .botao-repositorio{
+            background: var(--background-color-button-repositorio);
+        }
+      }
+    }
+  }
+}
+
+.todos-projetos{
+  & a {
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    padding: 1rem 1.563rem;
+    border-radius: 0.4rem;
+    margin-top: 0.8rem;
+    box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
+    width:fit-content;
+    margin-left: auto; 
+    
+    &:link,
+    &:visited {
+      color: var(--cor-fonte);
+      text-decoration: none;
+      font-size: 1.728rem;
+      font-weight: 600;
+      background: var(--background-color-button-repositorio);
+
+    }
+
+    &:hover,
+    &:active {
+      background-color: var(--background-color-fundo);
+      transform: translatey(-10%);
+    }
+   
+    & svg {
+      margin-left: 0.8rem;
+    }
+
+  }
+}
+
+/* Contato */
+.contato {
+  padding: 1.25rem 1.953rem 3.052rem 1.953rem;
+
+  & h2{
+    text-align: center;
+  }
+
+  & .informacoes {
+    display: flex;
+    flex-flow: column;
+    gap: 0.8rem;
+
+    & a {
+      color: var(--cor-fonte);
+      text-decoration: none;
+      font-size: 1.728rem;
+      font-style: normal;
+      transition: color 200ms ease-out;
+  
+      &:hover {
+        color: var(--cor-hover-menu);
+      }
+    }
+
+    & svg {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      background-color: var(--background-color-fundo-svg);
+      border-radius: var(--border-radius-img-svg); 
+      padding: 0.8rem;
+      box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.15);
+      transform: translatey(30%);
+      margin-right: 0.512rem;
+      transition: fill 200ms ease-out;
+
+      &:hover {
+        fill: var(--cor-hover-menu);
+      }
+    }
+  }
+
+  .display-informacoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+
+  & .icones-redes {
+    display: flex;
+    flex-flow: row;
+    gap: 1.563rem;
+    
+    & svg {
+      width: 4rem;
+      height: 4rem;
+      transition: all .3s;
+      border-radius: var(--border-radius-img-svg);   
+      fill: var(--background-color-fundo-svg);
+      
+      &:hover{
+        transform: translatey(-10%);
+        }  
+      }
+    }
+  }
+}
+
+/* Div Whatsapp Fixo */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 4rem;
+  right: 0.5rem;
+  width: 4rem;
+  cursor: pointer;
+  transition: transform 0.7s ease-in 0.1s;
+
+  & img {
+    width: 100%;
+    transition: transform 300ms ease-out;
+    &:hover,
+    &:active {
+      transform: translate(-10%, -10%);
+    }
+  }
+}
+
+/* Div Botao Subir Página */
+.botao-subir-pagina {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-img-svg);  
+  background-color: var(--background-color-fundo-svg);
+  transition: all .3s ease-out;
+  &:hover,
+  &:active {
+     transform: translatey(-10%);
+  }
+  & img{
+    width: 100%;
+  }
+}
+
+
+/* Secao Copyright */
+.copyright {
+  background-color: var(--background-color-conteudo);
+  color: var(--cor-fonte);
+
+  & > p {
+    font-size: 1.44rem;
+    text-align: center;
+  }
+}

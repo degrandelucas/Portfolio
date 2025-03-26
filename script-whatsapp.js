@@ -1,3 +1,25 @@
+// Importa o Materialize CSS no JavaScript
+import 'materialize-css/dist/js/materialize.min.js';
+
+// Inicialize os componentes do Materialize quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Inicializa o Sidenav
+    var sidenavElems = document.querySelectorAll('.sidenav');
+    var sidenavInstances = M.Sidenav.init(sidenavElems); // Removido 'options' se não estiver definido
+
+    // Inicializa outros demais componentes do Materialize
+    // Modais
+    var modalElems = document.querySelectorAll('.modal');
+    var modalInstances = M.Modal.init(modalElems);
+
+    // Selects
+    var selectElems = document.querySelectorAll('select');
+    var selectInstances = M.FormSelect.init(selectElems);
+
+    // Adicione inicializações para outros componentes que você estiver usando
+});
+
 // Atualiza dinamicamente o link do WhatsApp com base no tamanho da tela
 function atualizaWhatsappLink() {
     var whatsappLink = document.getElementById('whatsapp-link');
