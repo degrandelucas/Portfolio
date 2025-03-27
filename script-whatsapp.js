@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var selectElems = document.querySelectorAll('select');
     var selectInstances = M.FormSelect.init(selectElems);
 
+    // Tooltips
+    var options = {
+        exitDelay: 250, // Atraso antes do tooltip desaparecer
+        position: 'bottom', // Posição do tooltip
+    };
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, options);
+
     // Adicione inicializações para outros componentes que você estiver usando
 });
 
