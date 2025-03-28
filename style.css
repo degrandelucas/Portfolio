@@ -5,7 +5,7 @@
 
 
 /* Formatacao Global */
-body, a {
+body, a{
   font-family: "Montserrat", "Open Sans", "Roboto", Verdana, Tahoma, sans-serif;
   background-color: darken-3;
   color: rgb(255, 255, 255);
@@ -23,11 +23,13 @@ img {
 
 h1 {
   font-size: 3.052rem;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 2.488rem;
   text-align: center;
+  font-weight: 600;
 }
 
 h3 {
@@ -44,5 +46,12 @@ h5 {
 
 legend {
   display: inline-block;
-  margin: 0.3rem;
+  margin: 0.1rem;
 }
+
+.image-footer{
+  width: 1.5rem;
+  padding-right: 0.1rem;
+  margin-bottom: -0.4rem;
+}
+
