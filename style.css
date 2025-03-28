@@ -1,15 +1,15 @@
 /* Style.css Portfolio Lucas Degrande */
 
-/* Importacao do materialize-css */
-@import "~materialize-css/dist/css/materialize.min.css";
-
-
 /* Formatacao Global */
 body, a{
   font-family: "Montserrat", "Open Sans", "Roboto", Verdana, Tahoma, sans-serif;
   background-color: darken-3;
   color: rgb(255, 255, 255);
   text-align: justify;
+}
+
+#mobile-demo li a {
+  color: white !important;
 }
 
 img {

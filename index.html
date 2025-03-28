@@ -9,8 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@300&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--  bibliotecas de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://visualpharm.com/assets/567/Registry%20Editor-595b40b85ba036ed117da928.svg">
@@ -20,24 +20,25 @@
     <!-- Cabecalho e navegacao do Portfolio -->
     <header>
       <div class="navbar-fixed nav-wrapper">
-        <nav class="#37474f blue-grey darken-3">
-          <ul class="right right hide-on-med-and-down" id="nav-mobile">
+        <nav class="cotainer #37474f blue-grey darken-3">
+          <a data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mim">Sobre</a></li>
             <li><a href="#tecnologias">Tecnologias</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
+
+          <!-- Menu para telas de smartphones -->
+          <ul class="sidenav #37474f blue-grey darken-3" id="mobile-demo" style="color: white;">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mim">Sobre</a></li>
+            <li><a href="#tecnologias">Tecnologias</a>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
         </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mim">Sobre</a></li>
-          <li><a href="#tecnologias">Tecnologias</a>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-
       </div>   
     </header>
 
@@ -314,7 +315,7 @@
     </footer>
 
     <!-- abrir o WhatsAppWeb no navegador ou o WhatsApp no dispositivo móvel -->
-    <script src="./script-whatsapp.js"></script>
+    <script type="module" src="./script-whatsapp.js"></script>
 
     <!-- abrir menu para telas de smartphones com display menor que 450px -->
     <script src="./script-menu.js"></script>

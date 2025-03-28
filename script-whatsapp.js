@@ -1,6 +1,3 @@
-// Importa o Materialize CSS no JavaScript
-import 'materialize-css/dist/js/materialize.min.js';
-
 // Inicialize os componentes do Materialize quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -26,9 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Tooltip.init(elems, options);
 
     // Adicione inicializações para outros componentes que você estiver usando
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });
 
 // Atualiza dinamicamente o link do WhatsApp com base no tamanho da tela
+/*
 function atualizaWhatsappLink() {
     var whatsappLink = document.getElementById('whatsapp-link');
     var whatsappLinkIcone = document.getElementById('whatsapp-link-icone');
@@ -46,3 +54,4 @@ function atualizaWhatsappLink() {
 // Chama a função para atualizar o link do WhatsApp quando a página carrega e quando a janela é redimensionada
 window.onload = atualizaWhatsappLink;
 window.onresize = atualizaWhatsappLink;
+*/
