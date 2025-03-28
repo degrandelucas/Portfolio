@@ -38,6 +38,11 @@ h4 {
   font-size: 1.728rem;
 }
 
-figure {
+h5 {
+  font-size: 1.44rem;
+}
+
+legend {
   display: inline-block;
+  margin: 0.3rem;
 }
