@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         anchor.addEventListener('touchstart', scrollToAnchor);
     
         function scrollToAnchor(e) {
-  
     
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
