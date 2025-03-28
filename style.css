@@ -44,6 +44,10 @@ h5 {
   font-size: 1.44rem;
 }
 
+p {
+  font-size: 1.1rem
+}
+
 legend {
   display: inline-block;
   margin: 0.1rem;
@@ -54,4 +58,3 @@ legend {
   padding-right: 0.1rem;
   margin-bottom: -0.4rem;
 }
-
