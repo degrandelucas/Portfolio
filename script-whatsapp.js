@@ -24,15 +24,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Adicione inicializações para outros componentes que você estiver usando
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+    document.querySelectorAll('#mobile-demo a').forEach(anchor => {
+        anchor.addEventListener('click', scrollToAnchor);
+        anchor.addEventListener('touchstart', scrollToAnchor);
+    
+        function scrollToAnchor(e) {
+  
     
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
-        });
+        }
     });
+
 });
 
 // Atualiza dinamicamente o link do WhatsApp com base no tamanho da tela

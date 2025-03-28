@@ -8,10 +8,6 @@ body, a{
   text-align: justify;
 }
 
-#mobile-demo li a {
-  color: white !important;
-}
-
 img {
   width: 3rem;
 }
