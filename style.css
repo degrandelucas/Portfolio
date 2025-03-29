@@ -54,7 +54,3 @@ legend {
   padding-right: 0.1rem;
   margin-bottom: -0.4rem;
 }
-
-#mobile-demo a {
-  touch-action: manipulation;
-}

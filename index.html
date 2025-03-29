@@ -10,8 +10,8 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--  bibliotecas de ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://visualpharm.com/assets/567/Registry%20Editor-595b40b85ba036ed117da928.svg">
   </head>
@@ -19,28 +19,28 @@
   <body class="blue-grey darken-4">
     <!-- Cabecalho e navegacao do Portfolio -->
     <header>
-      <div class="navbar-fixed nav-wrapper">
-        <nav class="cotainer #37474f blue-grey darken-3">
-          <a data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-          <ul class="right show-on-large-only">
+      <div class="navbar-fixed">
+        <nav class="nav-wrapper #37474f blue-grey darken-3">
+          <a data-target="mobile" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mim">Sobre</a></li>
             <li><a href="#tecnologias">Tecnologias</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
-
-          <!-- Menu para telas de smartphones -->
-          <ul class="sidenav #004d40 teal darken-3" id="mobile-demo">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mim">Sobre</a></li>
-            <li><a href="#tecnologias">Tecnologias</a>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
         </nav>
-      </div>   
+      </div> 
     </header>
+
+    <!-- Menu para telas de smartphones -->
+    <ul class="sidenav hide-on-large-only #00796b teal darken-2" id="mobile">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mim">Sobre</a></li>
+      <li><a href="#tecnologias">Tecnologias</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
 
     <!-- Tag main do Portfolio -->
     <main>

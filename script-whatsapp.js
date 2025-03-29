@@ -1,9 +1,9 @@
 // Inicialize os componentes do Materialize quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Inicializa o Sidenav
+    // Inicializa a Sidenav com opções
     var sidenavElems = document.querySelectorAll('.sidenav');
-    var sidenavInstances = M.Sidenav.init(sidenavElems); // Removido 'options' se não estiver definido
+    var sidenavInstances = M.Sidenav.init(sidenavElems);
 
     // Inicializa outros demais componentes do Materialize
     // Modais
@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Adicione inicializações para outros componentes que você estiver usando
 
-    document.querySelectorAll('#mobile-demo a').forEach(anchor => {
+    document.querySelectorAll('#mobile a').forEach(anchor => {
         anchor.addEventListener('click', scrollToAnchor);
-        anchor.addEventListener('touchstart', scrollToAnchor);
     
         function scrollToAnchor(e) {
+            e.preventDefault(); // Previne o comportamento padrão de rolagem
     
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
