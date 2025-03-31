@@ -7,10 +7,11 @@ function atualizaWhatsappLink() {
     if (window.innerWidth > 960) {
         whatsappLink.href = "https://web.whatsapp.com/send?phone=553492517716"; 
     } else {
-        whatsappLink.href = "whatsapp://send?phone=+553492517716";
+        whatsappLink.href = "whatsapp://send?phone=+34992517716";
     }
 }
 
 // Chama a função para atualizar o link do WhatsApp quando a página carrega e quando a janela é redimensionada
 window.onload = atualizaWhatsappLink;
 window.onresize = atualizaWhatsappLink;
+``
