@@ -1,6 +1,6 @@
 // Atualiza dinamicamente o link do WhatsApp com base no tamanho da tela
 
-function atualizaWhatsappLink() {
+export function atualizaWhatsappLink() {
     var whatsappLink = document.getElementById('whatsapp-link');
 
     // Verifica o tamanho da tela
@@ -10,7 +10,3 @@ function atualizaWhatsappLink() {
         whatsappLink.href = "https://wa.me/553492517716";
     }
 }
-
-// Chama a função para atualizar o link do WhatsApp quando a página carrega e quando a janela é redimensionada
-window.onload = atualizaWhatsappLink;
-window.onresize = atualizaWhatsappLink;

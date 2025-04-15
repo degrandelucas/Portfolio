@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head id>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Explore meu portfólio na área de desenvolvimento, onde mostro meus conhecimentos aplicados em projetos criativos e responsivos. Conheça meu trabalho, minhas experiências e entre em contato!" />
-    <title>Lucas Degrande</title>
+    <title>Lucas Degrande | Desenvolvedor Backend</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@300&family=Roboto&display=swap"
       rel="stylesheet"
@@ -51,7 +51,7 @@
                 <h1>Sou Lucas Degrande</h1>
                 <h2>Desenvolvedor<br> 
                 Backend</h2>
-                <a class="waves-effect #00695c teal darken-3 btn row" href="#contato">Contate me</a>
+                <a class="waves-effect #00695c teal darken-3 btn row hoverable" href="#contato">Contate me</a>
                 <br>
                
               </div>
@@ -76,11 +76,11 @@
             <p>
               Sou graduado em Engenharia de Produção, com MBA em Gestão de Projetos. Minha experiência inclui a gestão de equipes, planejamento estratégico e análise e melhoria de processos.
             </p>
-            <div class="center-align"><a
+            <div class="center-align"><a class="waves-effect #00695c teal darken-3 btn hoverable"
             href="https://drive.google.com/file/d/11G2614neZLY1H26I9uvIIv-6lkJru5dt/view?usp=sharing"
             download
             target="_blank"
-            ><button class="waves-effect #00695c teal darken-3 btn">Download CV</button></a></div>
+            >Download CV</a></div>
           </div>
         </div>
       </section>
@@ -216,8 +216,8 @@
                     </div>
                     <div class="card-content center-align">
                       <div>
-                        <button class="waves-effect #0277bd light-blue darken-3 btn hoverable"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7212129134548852737/" target="_blank">Ver Projeto</a></button>
-                        <button class="waves-effect #212121 grey darken-4 btn hoverable"><a href="https://github.com/degrandelucas/AutomacaoTE" target="_blank">&#60; Repositório /&#62;</a></button>
+                        <a class="waves-effect #0277bd light-blue darken-3 btn hoverable" href="https://www.linkedin.com/feed/update/urn:li:activity:7212129134548852737/" target="_blank">Ver Projeto</a>
+                        <a class="waves-effect #212121 grey darken-4 btn hoverable" href="https://github.com/degrandelucas/AutomacaoTE" target="_blank">&#60; Repositório /&#62;</a>
                       </div>
                     </div>
                   </div>
@@ -236,8 +236,8 @@
                     </div>
                     <div class="card-content center-align">
                       <div>
-                        <button class="waves-effect #0277bd light-blue darken-3 btn hoverable"><a href="https://degrandelucas.github.io/NumeroSecreto/" target="_blank">Ver Projeto</a></button>
-                        <button class="waves-effect #212121 grey darken-4 btn hoverable"><a href="https://github.com/degrandelucas/NumeroSecreto" target="_blank">&#60; Repositório /&#62;</a></button>
+                        <a class="waves-effect #0277bd light-blue darken-3 btn hoverable" href="https://degrandelucas.github.io/NumeroSecreto/" target="_blank">Ver Projeto</a>
+                        <a  class="waves-effect #212121 grey darken-4 btn hoverable" href="https://github.com/degrandelucas/NumeroSecreto" target="_blank">&#60; Repositório /&#62;</a>
                       </div>
                     </div>
                   </div>
@@ -256,8 +256,8 @@
                     </div>
                     <div class="card-content center-align">
                       <div>
-                        <button class="waves-effect #0277bd light-blue darken-3 btn hoverable"><a href="https://degrandelucas.github.io/CalculadoraIMC/" target="_blank">Ver Projeto</a></button>
-                        <button class="waves-effect #212121 grey darken-4 btn hoverable"><a href="https://github.com/degrandelucas/CalculadoraIMC" target="_blank">&#60; Repositório /&#62;</a></button>
+                        <a class="waves-effect #0277bd light-blue darken-3 btn hoverable" href="https://degrandelucas.github.io/CalculadoraIMC/" target="_blank">Ver Projeto</a>
+                        <a class="waves-effect #212121 grey darken-4 btn hoverable" href="https://github.com/degrandelucas/CalculadoraIMC" target="_blank">&#60; Repositório /&#62;</a>
                       </div>
                     </div>
                   </div>
@@ -315,14 +315,8 @@
       </div>
     </footer>
 
-    <!-- abrir o WhatsAppWeb no navegador ou o WhatsApp no dispositivo móvel -->
-    <script src=".js/script-whatsapp.js"></script>
-
-    <!-- adiciona os compronentes Materialize que utilizam javaScript com o carregamento do DOM -->
-    <script src=".js/script-materialize.js"></script>
-
-     <!-- adiciona o ano atual de forma automatica no copyright -->
-    <script src=".js/script-utilidades.js"></script>
-
+    <!-- Importando o arquivo JavaScript main com todos os demais arquivos -->
+    <script type="module" src="./js/main.js"></script>
+    
   </body>
 </html>
