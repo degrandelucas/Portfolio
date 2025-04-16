@@ -10,7 +10,7 @@ export const projetosPortfolio = [
     },
     {
         titulo: 'Sorteador por Planilha Online',
-        imagem: '../img/Automacao_Log_Python.JPG',
+        imagem: '../img/Sorteador-Por-Planilha.png',
         altImagem: 'Interface-do-Sorteador-por-Planilha',
         descricao: 'Esta é uma aplicação web desenvolvida para simplificar e tornar eficiente o processo de sorteio através do carregamento de planilhas. Os usuários podem enviar arquivos em formatos como .xlsx, .xls, .csv e .ods, contendo a lista de participantes. A ferramenta processa esses dados para realizar um sorteio de forma aleatória. O backend da aplicação é construído em PHP, utilizando um banco de dados MySQL para armazenar os resultados, enquanto o frontend dinâmico é desenvolvido com HTML, CSS e JavaScript para uma experiência interativa.',
         linkVerProjeto: 'https://plataformatech.com.br',
