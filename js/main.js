@@ -3,13 +3,13 @@ import './script-materialize.js';
 import {atualizaWhatsappLink} from './script-whatsapp.js';
 import {renderizarLinksParaContato} from './script-renderizar-links-contatos.js';
 import {renderizarPortfolio} from './script-renderizar-portfolio.js';
-
-
+import { renderizarTecnologias } from './script-renderizar-tecnologias.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     atualizarAnoCopyright("ano-copyright");
-    renderizarLinksParaContato();
+    renderizarTecnologias();
     renderizarPortfolio();
+    renderizarLinksParaContato();
     atualizaWhatsappLink();
 });
 
