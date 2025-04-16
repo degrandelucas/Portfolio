@@ -1,13 +1,15 @@
 import {atualizarAnoCopyright} from './script-utilidades.js';
 import './script-materialize.js';
 import {atualizaWhatsappLink} from './script-whatsapp.js';
-import {renderizarLinksParaContato} from './script-renderizar-contatos.js';
+import {renderizarLinksParaContato} from './script-renderizar-links-contatos.js';
+import {renderizarPortfolio} from './script-renderizar-portfolio.js';
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
     atualizarAnoCopyright("ano-copyright");
     renderizarLinksParaContato();
+    renderizarPortfolio();
     atualizaWhatsappLink();
 });
 
