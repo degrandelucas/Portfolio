@@ -39,7 +39,7 @@ export function renderizarPortfolio() {
         const divLinksInterno = document.createElement('div');
 
         const linkVerProjeto = document.createElement('a');
-        linkVerProjeto.classList.add('waves-effect', '#0277bd', 'light-blue', 'darken-3', 'btn', 'hoverable');
+        linkVerProjeto.classList.add('waves-effect', '#0277bd', 'light-blue', 'darken-3', 'btn', 'hoverable', 'gap-ancora-ver-projeto');
         linkVerProjeto.href = projeto.linkVerProjeto;
         linkVerProjeto.target = '_blank';
         linkVerProjeto.textContent = 'Ver Projeto';

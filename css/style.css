@@ -54,3 +54,16 @@ legend {
   padding-right: 0.1rem;
   margin-bottom: -0.4rem;
 }
+
+.gap-ancora-ver-projeto{
+  margin-right: 0.5rem;
+}
+
+/* media query para ancoras ficarem com espaco sob a outra em telas menores */
+@media (max-width: 477px) {
+  .gap-ancora-ver-projeto{
+    margin-bottom: 0.5rem;
+  }
+}
+
+
