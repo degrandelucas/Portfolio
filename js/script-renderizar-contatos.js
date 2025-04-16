@@ -1,26 +1,25 @@
 import { linksContatos } from './links-contatos.js';
 
-export function renderizarContatos() {
-    const contatosContainer = document.getElementById('contatos-container');
+export function renderizarLinksParaContato() {
+    const linksContatoContainer = document.getElementById('links-container');
 
-    contatosData.forEach(contato => {
-        const linkElement = document.createElement('li');
-        linkElement.classList.add('row');
+    linksContatos.forEach(link => {
+        const linkElementLi = document.createElement('li');
+        linkElementLi.classList.add('row');
 
         const linkAncora = document.createElement('a');
         linkAncora.classList.add('grey-text', 'text-lighten-3');
-        linkAncora.href = contato.link;
+        linkAncora.href = link.link;
         linkAncora.target = '_blank';
 
         const iconImage = document.createElement('img');
         iconImage.classList.add('image-footer');
-        iconImage.src = contato.icone;
-        iconImage.alt = contato.alt;
+        iconImage.src = link.icone;
+        iconImage.alt = link.alt;
 
         linkAncora.appendChild(iconImage);
-        linkAncora.appendChild(document.createTextNode(contato.texto));
-
-        linkElement.appendChild(linkAncora);
-        contatosContainer.appendChild(linkElement);
+        linkAncora.appendChild(document.createTextNode(link.texto));
+        linkElementLi.appendChild(linkAncora);
+        linksContatoContainer.appendChild(linkElementLi);
     });
 }
