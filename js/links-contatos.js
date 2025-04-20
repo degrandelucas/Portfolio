@@ -1,3 +1,5 @@
+export const linkCurriculo = 'https://drive.google.com/file/d/1uaX8sfwWwzOD1YV4nGcbdJ7eYxwgVtE-/view?usp=sharing';
+
 export const linksContatos = [
     {
         tipo: 'whatsapp',
