@@ -20,7 +20,7 @@ export const projetosPortfolio = [
         titulo: 'Página Grupo de Louvor Renascer',
         imagem: '../img/Pagina-Grupo-De-Louvor.png',
         altImagem: 'Site_Grupo_De_Louvor',
-        descricao: 'Projeto web para o Grupo Renascer (Igreja Assembléia de Deus Belém) que centraliza letras, vídeos e cifras de louvores (ensaiados, próximo ensaio e futuros). Utilizando JavaScript para gerenciar dinamicamente as listas e renderizá-las em uma interface responsiva construída com HTML, CSS e Materialize CSS, o site facilita o acesso e o estudo dos repertórios da banda.',
+        descricao: 'Projeto web para o Grupo Renascer (Igreja Assembléia de Deus Belém) que centraliza letras, vídeos e cifras de louvores (ensaiados, próximo ensaio e futuros). Utilizando JavaScript para gerenciar dinamicamente as listas e renderizá-las em uma interface responsiva construída com HTML, CSS e Materialize CSS, o site facilita o acesso e o estudo dos repertórios do grupo.',
         linkVerProjeto: 'https://degrandelucas.github.io/Grupo-Louvor-Igreja/',
         linkRepositorio: 'https://github.com/degrandelucas/Grupo-Louvor-Igreja'
     },
