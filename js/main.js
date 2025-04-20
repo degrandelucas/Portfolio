@@ -1,10 +1,10 @@
 import {atualizarAnoCopyright} from './script-utilidades.js';
+import { atualizarLinkCurriculo } from './script-utilidades.js';
 import './script-materialize.js';
 import {atualizaWhatsappLink} from './script-whatsapp.js';
 import {renderizarLinksParaContato} from './script-renderizar-links-contatos.js';
 import {renderizarPortfolio} from './script-renderizar-portfolio.js';
 import { renderizarTecnologias } from './script-renderizar-tecnologias.js';
-import { atualizarLinkCurriculo } from './script-renderizar-links-contatos.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     atualizarAnoCopyright("ano-copyright");

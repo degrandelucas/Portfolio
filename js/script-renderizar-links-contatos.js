@@ -1,10 +1,4 @@
 import { linksContatos } from './links-contatos.js';
-import { linkCurriculo } from './links-contatos.js';
-
-export function atualizarLinkCurriculo(idCurriculo) {
-    const linkCV = document.getElementById(idCurriculo);
-    linkCV.href = linkCurriculo;
-}
 
 export function renderizarLinksParaContato() {
     const linksContatoContainer = document.getElementById('links-container');
