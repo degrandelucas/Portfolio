@@ -8,7 +8,6 @@ import { renderizarTecnologias } from './script-renderizar-tecnologias.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     atualizarAnoCopyright("ano-copyright");
-    atualizarLinkCurriculo("link-cv");
     renderizarTecnologias();
     renderizarPortfolio();
     renderizarLinksParaContato();
