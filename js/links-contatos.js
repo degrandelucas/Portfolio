@@ -1,4 +1,4 @@
-export const linkCurriculo = 'https://drive.google.com/file/d/1uaX8sfwWwzOD1YV4nGcbdJ7eYxwgVtE-/view?usp=sharing';
+export const linkCurriculo = 'https://drive.google.com/file/d/1f8WRZiUWvho8UVh52pNmH-VR25z5lHXe/view?usp=sharing';
 
 export const linksContatos = [
     {
