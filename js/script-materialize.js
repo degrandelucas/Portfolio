@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.tooltipped');
     var instances = M.Tooltip.init(elems, options);
 
-    // Adicona a rolagem suave para ancoras (tag a) e id #mobile
-    document.querySelectorAll('#mobile a').forEach(anchor => {
+    // Adicona a rolagem suave para ancoras (tag a)
+    document.querySelectorAll('a').forEach(anchor => {
         anchor.addEventListener('click', scrollToAnchor);
     
         function scrollToAnchor(e) {
@@ -36,17 +36,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Adicona a rolagem suave para ancoras (tag a) e id #desktop
-    document.querySelectorAll('a').forEach(anchor => {
-        anchor.addEventListener('click', scrollToAnchor);
-    
-        function scrollToAnchor(e) {
-            e.preventDefault(); // Previne o comportamento padrão de rolagem
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }       
-    });
-    
 });
