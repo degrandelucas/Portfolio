@@ -46,9 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
-        }
-
-        
+        }       
     });
-
+    
 });
