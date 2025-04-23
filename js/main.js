@@ -1,5 +1,5 @@
-import {atualizarAnoCopyright} from './script-utilidades.js';
 import './script-materialize.js';
+import {atualizarAnoCopyright} from './script-utilidades.js';
 import {atualizaWhatsappLink} from './script-whatsapp.js';
 import {renderizarLinksParaContato} from './script-renderizar-links-contatos.js';
 import {renderizarPortfolio} from './script-renderizar-portfolio.js';
