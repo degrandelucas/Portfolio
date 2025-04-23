@@ -23,6 +23,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.tooltipped');
     var instances = M.Tooltip.init(elems, options);
 
+    // Adicona a rolagem suave para ancoras (tag a) para id #desktop dispositivos desktops
+    document.querySelectorAll('#menu a').forEach(anchor => {
+        anchor.addEventListener('click', scrollToAnchor);
+
+        function scrollToAnchor(e) {
+            e.preventDefault(); // Previne o comportamento padrão de rolagem
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });    
+
     // Adicona a rolagem suave para ancoras (tag a) para id #mobile dispositivos moveis
     document.querySelectorAll('#mobile a').forEach(anchor => {
         anchor.addEventListener('click', scrollToAnchor);
@@ -35,17 +48,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
-
-    // Adicona a rolagem suave para ancoras (tag a) para id #desktop dispositivos moveis
-    document.querySelectorAll('#menu a').forEach(anchor => {
-        anchor.addEventListener('click', scrollToAnchor);
-    
-        function scrollToAnchor(e) {
-            e.preventDefault(); // Previne o comportamento padrão de rolagem
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });    
 });
