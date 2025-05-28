@@ -5,7 +5,7 @@ export const projetosPortfolio = [
         altImagem: 'Acesso_Login_Plataforma_Estudos_ADBelem',
         descricao: 'Plataforma de E-learning para aprendizado em vídeo, que organiza os cursos divididos em categorias intuitivas. Desenvolvida com backend em PHP [Laravel], banco de dados MySQL e frontend em HTML, CSS e JavaScript.',
         //, oferece busca eficiente, sistema de avaliação por provas e certificação PDF automática
-        linkVerProjeto: '#',
+        linkVerProjeto: 'https://plataformatech.com.br',
         linkRepositorio: 'https://github.com/degrandelucas/Plataforma_AD-Belem'
     },
     {
@@ -13,7 +13,7 @@ export const projetosPortfolio = [
         imagem: './img/Sorteador-Por-Planilha.png',
         altImagem: 'Interface-do-Sorteador-por-Planilha',
         descricao: 'Esta é uma aplicação web desenvolvida para simplificar e tornar eficiente o processo de sorteio através do carregamento de planilhas. Os usuários podem enviar arquivos em formatos como .xlsx, .xls, .csv e .ods, contendo a lista de participantes. A ferramenta processa esses dados para realizar um sorteio de forma aleatória. O backend da aplicação é construído em PHP, utilizando um banco de dados MySQL para armazenar os resultados, enquanto o frontend dinâmico é desenvolvido com HTML, CSS e JavaScript para uma experiência interativa.',
-        linkVerProjeto: 'https://plataformatech.com.br',
+        linkVerProjeto: 'https://www.linkedin.com/posts/activity-7309656503852896256-OFdf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABkRIm4BGsrBZm3OHAei3OUigVS8-XtjyJE',
         linkRepositorio: 'https://github.com/degrandelucas/SorteadorUploadPlanilha'
     },
     {
