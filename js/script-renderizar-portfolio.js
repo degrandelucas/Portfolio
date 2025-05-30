@@ -22,6 +22,7 @@ export function renderizarPortfolio() {
         imgProjeto.alt = projeto.altImagem;
         imgProjeto.classList.add('responsive-img');
 
+
         divCardImage.appendChild(imgProjeto);
 
         const spanTitulo = document.createElement('span');

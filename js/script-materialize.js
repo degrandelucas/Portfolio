@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var selectElems = document.querySelectorAll('select');
     var selectInstances = M.FormSelect.init(selectElems);
 
+    //Imagens com Materialbox
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, options);
+
     // Tooltips com opcoes
     var options = {
         exitDelay: 250, // Atraso antes do tooltip desaparecer
