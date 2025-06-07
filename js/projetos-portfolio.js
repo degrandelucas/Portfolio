@@ -25,12 +25,12 @@ export const projetosPortfolio = [
         linkRepositorio: 'https://github.com/degrandelucas/SorteadorUploadPlanilha'
     },
     {
-        titulo: 'Automatização de Tarefas',
-        imagem: './img/Automacao_Log_Python.JPG',
-        altImagem: 'Automacao_Site_Logistica_Python',
-        descricao: 'Este projeto automatiza tarefas na Plataforma de Tracking da empresa, utilizando Python para criar um script que realiza a finalização de notas fiscais entregues e a adição de observações em notas fiscais não entregues. As principais bibliotecas utilizadas incluem PyAutoGUI e Pandas.',
-        linkVerProjeto: 'https://www.linkedin.com/feed/update/urn:li:activity:7212129134548852737/',
-        linkRepositorio: 'https://github.com/degrandelucas/AutomacaoTE'
+        titulo: 'Sorteador de Nomes em Lote',
+        imagem: './img/Sorteador_Nomes_Lote.JPG',
+        altImagem: 'Sorteador-de-Nomes-em-Lote',
+        descricao: 'Este projeto é uma aplicação web interativa para sorteio de nomes em lote, desenvolvida utilizando HTML, CSS e JavaScript. Ela permite que o usuário adicione uma lista de nomes separados por vírgula, realize sorteios aleatórios e reinicie o processo facilmente.',
+        linkVerProjeto: 'https://degrandelucas.github.io/SorteadorNomesEmLote/',
+        linkRepositorio: 'https://github.com/degrandelucas/SorteadorNomesEmLote'
     }
     // ,
     // {
